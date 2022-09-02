@@ -3,6 +3,5 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
-  def splash
-  end
+  def splash; end
 end
