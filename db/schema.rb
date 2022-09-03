@@ -16,7 +16,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_02_182906) do
 
   create_table "budgets", force: :cascade do |t|
     t.bigint "author_id", null: false
-    t.string "name", default: "New Budget", null: false
+    t.string "name", null: false
     t.decimal "amount", default: "0.0", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -33,14 +33,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_02_182906) do
   end
 
   create_table "groups", force: :cascade do |t|
-    t.string "name", default: "New Group", null: false
+    t.string "name", null: false
     t.string "icon", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name", default: "New User", null: false
+    t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "email", default: "", null: false
