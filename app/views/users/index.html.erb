@@ -6,6 +6,9 @@
     <p><%=h user.email %></p>
     <p><%=h user.created_at %></p>
     <p><%=h user.updated_at %></p>
+    <% if user == current_user %>
+      <%= link_to 'Edit', edit_user_registration_path, :class => 'btn btn-primary' %>
+    <% end %>
   </div>
 <% end %>
 
