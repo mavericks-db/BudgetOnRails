@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+ @font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('Proxima Nova Bold.ttf');
+ }
+
+ @font-face {
+  font-family: 'Proxima Nova Light';
+  src: url('Proxima Nova Light.ttf');
+ }
+
+ :root {
+  --main-bg-color: #3778c2;
+  --second-bg-color: #5fb523;
+  --text-color: #434b54;
+  --font-bold: 'Proxima Nova Bold', sans-serif;
+  --font-light: 'Proxima Nova Light', sans-serif;
+ }
+
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+
+ nav {
+  background-color: var(--main-bg-color);
+  font-family: var(--font-bold);
+ }
