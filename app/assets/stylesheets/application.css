@@ -14,31 +14,61 @@
  *= require_self
  */
 
- @font-face {
+@font-face {
   font-family: 'Proxima Nova Bold';
   src: url('Proxima Nova Bold.ttf');
- }
+}
 
- @font-face {
+@font-face {
   font-family: 'Proxima Nova Light';
   src: url('Proxima Nova Light.ttf');
- }
+}
 
- :root {
+:root {
   --main-bg-color: #3778c2;
   --second-bg-color: #5fb523;
-  --text-color: #434b54;
+  --text-color-dark: #434b54;
+  --text-color-light: #fff;
   --font-bold: 'Proxima Nova Bold', sans-serif;
   --font-light: 'Proxima Nova Light', sans-serif;
- }
+}
 
- * {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
- }
+}
 
- nav {
+header {
   background-color: var(--main-bg-color);
   font-family: var(--font-bold);
- }
+}
+
+.navbar .navbar-brand {
+  color: var(--text-color-light);
+}
+
+.bg-main {
+  background-color: var(--main-bg-color) !important;
+}
+
+a.nav-link {
+  color: var(--text-color-light);
+}
+
+.logo {
+  color: var(--text-color-light);
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+}
+
+.material-symbols-outlined {
+  color: var(--text-color-light);
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+}
