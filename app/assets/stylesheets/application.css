@@ -82,13 +82,24 @@ a.nav-link {
   font-family: var(--font-bold);
 }
 
-.login, .sign-up {
+.pg_title {
+  color: var(--text-color-light);
+}
+
+.login,
+.sign-up {
   font-family: var(--font-light);
   width: 90%;
 }
 
 @media screen and (min-width: 768px) {
-  .login, .sign-up {
+  .login,
+  .sign-up {
     width: 10%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
   }
 }
