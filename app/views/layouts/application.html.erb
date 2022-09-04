@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <% if user_signed_in? %>
+    <% if user_signed_in? && controller_name != 'registrations'%>
       <%= render "layouts/navbar" %>
     <% end %>
     <% if notice %>
