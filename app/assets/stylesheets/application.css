@@ -72,3 +72,23 @@ a.nav-link {
     'GRAD' 0,
     'opsz' 48;
 }
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--font-bold);
+}
+
+.login, .sign-up {
+  font-family: var(--font-light);
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .login, .sign-up {
+    width: 10%;
+  }
+}
