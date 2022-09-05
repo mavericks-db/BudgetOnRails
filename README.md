@@ -7,7 +7,30 @@
 The result should look similar to the following data model:
 <img width="374" alt="erd_diagram" src="https://user-images.githubusercontent.com/98527559/188287544-68d6fb5b-a265-4001-b1ac-3dc74393d720.png">
 
-## Built With
+## Learning Objectives 🔖
+- [x] Use ruby gems as software packages system.
+- [x] Install Ruby on Rails framework.
+- [x] Understand Rails RESTful design and router.
+- [x] Use controllers to handle requests and render empty views.
+- [x] Use params from browser request in a safe way.
+- [x] Use preprocessed html file with embedded Ruby code.
+- [x] Use layouts and templates for shared content.
+- [x] Use database migration files to maintain database schema.
+- [x] Use validations for models.
+- [x] Secure app from n+1 problems.
+- [x] Understand what ORM is.
+- [x] Write SQL queries with ActiveRecord.
+- [x] Set up associations between models.
+- [x] Build a webapp that requires the user to log in.
+- [x] Use devise gem for authentication.
+- [x] Limit access to webapp resources based on authorization rules.
+- [x] Analyze in writing why you have made a coding choice using one structure over another.
+
+## Project Documentation 📄
+
+- [x] Here is the presentation video [link](https://www.loom.com/share/0aef6bef3faa4c6b9542e351a164bf35)👈
+
+## Built With 🛠️
 
 - [x] Programming Language: [Ruby](https://www.ruby-lang.org/en/)
 - [x] Framework: [Ruby on Rails](https://rubyonrails.org/)
