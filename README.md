@@ -29,6 +29,7 @@ The result should look similar to the following data model:
 ## Project Documentation 📄
 
 - [x] Here is the presentation video [link](https://www.loom.com/share/0aef6bef3faa4c6b9542e351a164bf35)👈
+- [x] Here is the deployed app in [Heroku](https://app-budget-on-rails.herokuapp.com/)👈
 
 ## Built With 🛠️
 
