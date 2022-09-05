@@ -1,0 +1,22 @@
+<%= render "groups/new" %>
+<div class="container d-flex flex-column justify-content-center align-items-center">
+
+  <%= form_with model: @group, url: groups_path(current_user, @rgroup), method: :post do |f| %>
+  <div class="field mt-2 mb-2">
+      <%= f.text_field :name, autofocus: true, autocomplete: "name" , class: "form-control", placeholder: "Category Name" %>
+  </div>
+  <div class="field mb-2">
+    <%= f.select :icon, @icons ,{ include_blank: 'Please select an icon' }, class: "form-select" %>
+  </div>
+  <% if :icon.present? %>
+  <h2>
+    <%= @group.icon %>
+  </h2>
+  <% end %>
+
+  <div class="actions mb-2">
+    <%= f.submit "Add Category" , class: "btn btn-success" %>
+  </div>
+  <% end %>
+</div>
+</div>
