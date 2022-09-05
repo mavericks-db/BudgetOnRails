@@ -7,7 +7,7 @@ RSpec.describe Group, type: :model do
       expect(first_group).to_not be_valid
     end
 
-    it 'is not valid without an email' do
+    it 'is not valid without an icon' do
       first_group = Group.create(name: 'name', icon: nil)
       expect(first_group).to_not be_valid
     end
