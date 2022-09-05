@@ -3,5 +3,6 @@ class Budget < ApplicationRecord
   has_many :group_budgets, dependent: :destroy
   has_many :groups, through: :group_budgets
 
-  validates :name, :amount, presence: true
+  validates :name, presence: true
+  validates :amount, presence: true, numericality: { greater_than: 0 }
 end
