@@ -2,7 +2,10 @@
 
 # BudgetOnRails
 
-> This is an educational project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what. The Ruby on Rails application
+> This is an educational project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what. The Ruby on Rails application that allows the user to:
+- [x] register and log in, so that the data is private to them.
+- [x] introduce new transactions associated with a category.
+- [x] see the money spent on each category.
 
 The result should look similar to the following data model:
 <img width="374" alt="erd_diagram" src="https://user-images.githubusercontent.com/98527559/188287544-68d6fb5b-a265-4001-b1ac-3dc74393d720.png">
