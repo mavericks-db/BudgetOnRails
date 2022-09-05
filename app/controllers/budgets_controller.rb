@@ -13,16 +13,18 @@ class BudgetsController < ApplicationController
 
   def create
     @budget = Budget.new(budget_params)
+    @group_budget = GroupBudget.new(group_id: params[:group_id], budget_id: @budget.id)
     if @budget.save
-      redirect_to budgets_path
+      flash[:notice] = 'Successfully created budget.'
+      redirect_to root_path
     else
-      render :new
+      render 'new'
     end
   end
 
   private
 
   def budget_params
-    params.require(:budget).permit(:name, :amount, :author_id)
+    params.require(:budget).permit(:name, :amount)
   end
 end

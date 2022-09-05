@@ -11,6 +11,6 @@
     <p class="card-text">Total Amount Allotted: $
       <%= group.budgets.sum(:amount) %>
     </p>
-    <a href="/groups/<%= group.id %>" class="btn btn-success">SELECT</a>
+    <%= button_to "SELECT", group_path(group), method: :get, class: "btn btn-success" %>
   </div>
 </div>
