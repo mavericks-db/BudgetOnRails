@@ -15,12 +15,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_02_182906) do
   enable_extension "plpgsql"
 
   create_table "budgets", force: :cascade do |t|
-    t.bigint "author_id", null: false
+    t.bigint "user_id", null: false
     t.string "name", null: false
     t.decimal "amount", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["author_id"], name: "index_budgets_on_author_id"
+    t.index ["user_id"], name: "index_budgets_on_user_id"
   end
 
   create_table "group_budgets", force: :cascade do |t|
@@ -56,7 +56,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_02_182906) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "budgets", "users", column: "author_id"
+  add_foreign_key "budgets", "users"
   add_foreign_key "group_budgets", "budgets"
   add_foreign_key "group_budgets", "groups"
 end

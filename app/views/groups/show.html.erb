@@ -16,4 +16,11 @@
     </h3>
   </div>
 </div>
-</div>
+<%= link_to "Add New Budget", new_group_path, class: "btn btn-success mb-5" %>
+<h1>All allotted budgets</h1>
+
+<% if @budgets.any? %>
+  <% @budgets.each do |budget| %>
+    <%= render partial: 'budgets/budget_card', locals: { budget: budget } %>
+  <% end %>
+<% end %>
