@@ -1,0 +1,10 @@
+<div class="container d-flex flex-column justify-content-center align-items-center">
+
+  <h1>Showing group list</h1>
+
+  <% @groups.each do |group| %>
+    <%= render 'groups/group_card', locals: { group: group } %>
+  <% end %>
+  <%= render 'groups/group_card' %>
+
+</div>
