@@ -1,14 +1,10 @@
-<h1>Users List</h1>
+<div class="container d-flex flex-column justify-content-center align-items-center">
 
-<% @users.each do |user| %>
-  <div class="user">
-    <h2><%=h user.name %></h2>
-    <p><%=h user.email %></p>
-    <p><%= time_ago_in_words(user.created_at) %></p>
-    <% if user == current_user %>
-      <%= link_to 'Edit', edit_user_registration_path, :class => 'btn btn-primary' %>
-    <% end %>
-  </div>
-<% end %>
+  <h1>Users List</h1>
 
-<%= link_to "Back", root_path %>
+  <% @users.each do |user| %>
+    <%= render partial: 'user_card', locals: { user: user } %>
+  <% end %>
+
+  <%= link_to "Back", root_path %>
+</div>
