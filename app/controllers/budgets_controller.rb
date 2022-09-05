@@ -3,6 +3,10 @@ class BudgetsController < ApplicationController
     @budgets = Budget.all
   end
 
+  def show
+    @budget = Budget.find(params[:id])
+  end
+
   def new
     @budget = Budget.new
   end
