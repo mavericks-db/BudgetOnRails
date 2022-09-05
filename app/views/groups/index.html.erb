@@ -1,10 +1,13 @@
+<%= render "groups/header" %>
 <div class="container d-flex flex-column justify-content-center align-items-center">
-
-  <h1>Showing group list</h1>
-
   <% @groups.each do |group| %>
-    <%= render 'groups/group_card', locals: { group: group } %>
+    <%= render partial: 'groups/group_card', locals: { group: group } %>
   <% end %>
-  <%= render 'groups/group_card' %>
+
+  <% if @groups.empty? %>
+  <h1>There are no public groups to show</h1>
+  <% end %>
+
+  <%= link_to "Add New Category", new_group_path, class: "btn btn-success" %>
 
 </div>

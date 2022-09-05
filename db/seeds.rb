@@ -9,8 +9,8 @@ require 'faker'
 
 p "Seeding database..."
 
-# Create 5 users
-5.times do
+# Create 2 users
+2.times do
   User.create(name: Faker::Name.name, email: Faker::Internet.email, password: 123456, password_confirmation: 123456)
 end
 
