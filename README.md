@@ -124,6 +124,9 @@ Give a ⭐️ if you like this project!
 
 - [Microverse](https://www.microverse.org/)
 - Code Reviewers
+- Original design idea by [Gregoire Vella on Behance.](https://www.behance.net/gregoirevella)
+
+The [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/) requires that you give appropriate credit to the author. Therefore, you must do it in the README of your project.
 
 ## 📝 License
 
