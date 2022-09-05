@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'splash/index.html.erb', type: :system do
+RSpec.describe 'splash.html.erb', type: :system do
   context 'Write tests for splash page' do
     it 'displays the name of the app' do
       visit root_path
