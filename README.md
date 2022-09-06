@@ -8,6 +8,7 @@
 - [x] see the money spent on each category.
 
 The result should look similar to the following data model:
+
 <img width="374" alt="erd_diagram" src="https://user-images.githubusercontent.com/98527559/188287544-68d6fb5b-a265-4001-b1ac-3dc74393d720.png">
 
 ## Learning Objectives 🔖
