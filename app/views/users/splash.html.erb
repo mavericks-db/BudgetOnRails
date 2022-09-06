@@ -1,0 +1,13 @@
+<div class="splash">
+  <div class="spinner-border" style="width: 1.5rem; height: 1.5rem;" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow" style="width: 1.5rem; height: 1.5rem;" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <h1>BudgetOnRails</h1>
+  <% unless user_signed_in? %>
+    <%= link_to "LOG IN", new_user_session_path, :class => 'btn btn-primary mt-5 mb-2 login' %>
+    <%= link_to "SIGN UP", new_user_registration_path, :class => 'btn mb-2 sign-up' %>
+  <% end %>
+</div>
